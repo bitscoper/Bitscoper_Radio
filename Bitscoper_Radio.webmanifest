@@ -74,9 +74,9 @@
   ],
   "screenshots": [
     {
-      "src": "/ScreenShot.jpeg",
-      "type": "image/jpeg",
-      "sizes": "540x720",
+      "src": "/ScreenShot.png",
+      "type": "image/png",
+      "sizes": "1280x800",
       "label": "Bitscoper Radio"
     }
   ],
