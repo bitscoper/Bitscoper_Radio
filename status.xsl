@@ -174,7 +174,9 @@
                                             <tr>
                                                 <td>Stream URL</td>
                                                 <td>
-                                                    <a href="{server_url}"> : <xsl:value-of
+                                                    <b>: </b>
+                                                    <a href="{server_url}">
+                                                        <xsl:value-of
                                                             select="server_url" />
                                                     </a>
                                                 </td>
