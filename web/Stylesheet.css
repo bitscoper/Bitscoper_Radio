@@ -96,6 +96,14 @@ video {
   border-radius: 10px;
 }
 
+.canvas {
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+  background: transparent;
+  border-radius: 10px;
+}
+
 .mount_info_table {
   text-align: left;
   margin: 20px 0;
