@@ -4,7 +4,7 @@
 
 console.log(
   "%c%s",
-  "background-color: red; padding: 20px 10px 20px 10px; font-size: 18px; color: white; font-weight: bold;",
+  "font-size: 16px; color: red; font-weight: bold;",
   "Do not input anything here."
 );
 
