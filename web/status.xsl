@@ -214,7 +214,9 @@
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:for-each>
-                <div id="footer">© <a href="https://bitscoper.dev/"
+                <div id="footer"><a href="https://github.com/bitscoper/Bitscoper_Radio/"
+                        title="Source Code" target="new">Source Code</a> | © <a
+                        href="https://bitscoper.dev/"
                         title="Abdullah As-Sadeed" target="new">Abdullah As-Sadeed</a>
                 </div>
                 <script src="Script.js"></script>

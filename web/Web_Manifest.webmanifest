@@ -9,7 +9,8 @@
   "dir": "ltr",
   "display": "standalone",
   "display_override": [
-    "window-controls-overlay"
+    "window-controls-overlay",
+    "standalone"
   ],
   "edge_side_panel": {
     "preferred_width": 376
@@ -60,7 +61,7 @@
     }
   ],
   "id": "/",
-  "lang": "en",
+  "lang": "en-US",
   "launch_handler": {
     "client_mode": [
       "navigate-existing",
@@ -68,7 +69,8 @@
     ]
   },
   "name": "Bitscoper Radio",
-  "orientation": "portrait",
+  "orientation": "natural",
+  "prefer_related_applications": false,
   "protocol_handlers": [
     {
       "protocol": "web+BitscoperRadio",
@@ -78,11 +80,19 @@
   "scope": "/",
   "scope_extensions": [
     {
-      "origin": "radio.bitscoper.dev"
+      "origin": "https://radio.bitscoper.dev/",
+      "type": "origin"
     }
   ],
   "screenshots": [
     {
+      "label": "Bitscoper Radio",
+      "sizes": "540x720",
+      "src": "/Assets/Images/Screenshot.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "form_factor": "wide",
       "label": "Bitscoper Radio",
       "sizes": "540x720",
       "src": "/Assets/Images/Screenshot.jpeg",
