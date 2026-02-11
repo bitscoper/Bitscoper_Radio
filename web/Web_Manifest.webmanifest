@@ -1,0 +1,109 @@
+{
+  "background_color": "#FFFFFF",
+  "categories": [
+    "music",
+    "multimedia",
+    "video"
+  ],
+  "description": "Bitscoper Radio",
+  "dir": "ltr",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay"
+  ],
+  "edge_side_panel": {
+    "preferred_width": 376
+  },
+  "handle_links": "preferred",
+  "icons": [
+    {
+      "purpose": "any",
+      "sizes": "48x48",
+      "src": "/Assets/Images/Logo_48x48.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "sizes": "72x72",
+      "src": "/Assets/Images/Logo_72x72.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "sizes": "96x96",
+      "src": "/Assets/Images/Logo_96x96.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "sizes": "128x128",
+      "src": "/Assets/Images/Logo_128x128.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "sizes": "192x192",
+      "src": "/Assets/Images/Logo_192x192.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "sizes": "384x384",
+      "src": "/Assets/Images/Logo_384x384.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "sizes": "512x512",
+      "src": "/Assets/Images/Logo_512x512.png",
+      "type": "image/png"
+    }
+  ],
+  "id": "/",
+  "lang": "en",
+  "launch_handler": {
+    "client_mode": [
+      "navigate-existing",
+      "auto"
+    ]
+  },
+  "name": "Bitscoper Radio",
+  "orientation": "portrait",
+  "protocol_handlers": [
+    {
+      "protocol": "web+BitscoperRadio",
+      "url": "/%s"
+    }
+  ],
+  "scope": "/",
+  "scope_extensions": [
+    {
+      "origin": "radio.bitscoper.dev"
+    }
+  ],
+  "screenshots": [
+    {
+      "label": "Bitscoper Radio",
+      "sizes": "540x720",
+      "src": "/Assets/Images/Screenshot.jpeg",
+      "type": "image/jpeg"
+    }
+  ],
+  "short_name": "Bitscoper Radio",
+  "shortcuts": [
+    {
+      "description": "Bitscoper Radio",
+      "icons": [
+        {
+          "sizes": "192x192",
+          "src": "/Assets/Images/Logo_192x192.png",
+          "type": "image/png"
+        }
+      ],
+      "name": "Bitscoper Radio",
+      "url": "/"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#424242"
+}

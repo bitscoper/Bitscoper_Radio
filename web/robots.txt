@@ -1,0 +1,3 @@
+Sitemap: https://radio.bitscoper.dev/sitemap.xml
+User-Agent: *
+Disallow:
