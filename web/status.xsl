@@ -32,9 +32,11 @@
                                 </h3>
                                 <xsl:if
                                     test="server_type and ((server_type = 'application/ogg') or (server_type = 'audio/ogg') or (server_type = 'application/mpeg') or (server_type = 'audio/mpeg'))">
-                                    <audio controls="controls" preload="none">
+                                    <audio controls="controls" preload="none"
+                                        class="audio">
                                         <source src="{@mount}" type="{server_type}" /> Your browser
         does not support HTML5 audio. </audio>
+                                    <canvas class="canvas"></canvas>
                                 </xsl:if>
                                 <xsl:if
                                     test="server_type and ((server_type = 'application/webm') or (server_type = 'video/webm'))">
