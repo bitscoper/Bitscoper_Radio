@@ -105,6 +105,10 @@ try {
 
       audio.addEventListener("play", function () {
         audioContext.resume();
+
+        canvas.style.display = "block";
+        canvas.width = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
         visualize();
       });
     });

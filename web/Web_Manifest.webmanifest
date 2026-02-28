@@ -10,6 +10,7 @@
   "display": "standalone",
   "display_override": [
     "window-controls-overlay",
+    "tabbed",
     "standalone"
   ],
   "edge_side_panel": {
@@ -115,5 +116,17 @@
     }
   ],
   "start_url": "/",
+  "tab_strip": {
+    "home_tab": {
+      "scope_patterns": [
+        {
+          "pathname": "/"
+        }
+      ]
+    },
+    "new_tab_button": {
+      "url": "/"
+    }
+  },
   "theme_color": "#424242"
 }
