@@ -88,14 +88,14 @@
   "screenshots": [
     {
       "label": "Bitscoper Radio",
-      "sizes": "540x720",
+      "sizes": "1920x1080",
       "src": "/Assets/Images/Screenshot.jpeg",
       "type": "image/jpeg"
     },
     {
       "form_factor": "wide",
       "label": "Bitscoper Radio",
-      "sizes": "540x720",
+      "sizes": "1920x1080",
       "src": "/Assets/Images/Screenshot.jpeg",
       "type": "image/jpeg"
     }
