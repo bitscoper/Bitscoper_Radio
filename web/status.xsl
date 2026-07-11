@@ -1,26 +1,27 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-    <xsl:output omit-xml-declaration="no" method="xml"
-        doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
-        doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" indent="yes"
-        encoding="UTF-8" />
+    <xsl:output omit-xml-declaration="no" method="xml" doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" indent="yes" encoding="UTF-8"/>
     <xsl:template
         match="/icestats">
         <!-- By Abdullah As-Sadeed -->
-        <html xmlns="http://www.w3.org/1999/xhtml">
+        <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
             <head>
-                <meta charset="UTF-8" />
-                <base href="https://radio.bitscoper.dev/" />
-                <meta name="author" content="Abdullah As-Sadeed" />
-                <link rel="manifest" href="Web_Manifest.webmanifest" />
-                <meta name="theme-color" content="rgb(66, 66, 66)" />
-                <link rel="icon" type="image/x-icon" href="favicon.ico" />
-                <link rel="apple-touch-icon" href="/Icons/Transparent/192x192.png" />
+                <meta charset="UTF-8"/>
+                <base href="https://radio.bitscoper.dev/"/>
                 <title>Bitscoper Radio</title>
-                <meta name="description" content="Bitscoper Radio" />
-                <meta name="keywords" content="stream, radio, video, audio, broadcast" />
-                <link rel="stylesheet" type="text/css" href="Stylesheet.css" />
-                <meta name="viewport"
-                    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+                <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+                <meta name="theme-color" content="rgb(66, 66, 66)"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+                <meta name="color-scheme" content="only light"/>
+                <link rel="stylesheet" type="text/css" href="/Stylesheet.css"/>
+                <meta name="mobile-web-app-capable" content="yes"/>
+                <link rel="manifest" href="/Application.webmanifest"/>
+                <meta name="apple-mobile-web-app-title" content="Bitscoper Radio"/>
+                <link rel="apple-touch-icon" href="/Icons/Transparent/192x192.png" type="image/png"/>
+                <meta name="robots" content="index, follow"/>
+                <meta name="author" content="Abdullah As-Sadeed"/>
+                <meta name="description" content="An Icecast UI"/>
+                <link rel="me" href="https://github.com/bitscoper/Bitscoper_Radio/"/>
+                <meta name="google-site-verification" content="nPqxZsjTdkgkE2-u1AvvvuMZWIk_qJWno_eTHkJAUL0"/>
             </head>
             <body lang="en-US">
                 <h1 id="header">Bitscoper Radio</h1>
@@ -28,21 +29,24 @@
                     <xsl:choose>
                         <xsl:when test="listeners">
                             <div class="mounts">
-                                <h3> Mount Point: <xsl:value-of select="@mount" />
+                                <h3>
+                                    Mount Point:
+                                    <xsl:value-of select="@mount"/>
                                 </h3>
-                                <xsl:if
-                                    test="server_type and ((server_type = 'application/ogg') or (server_type = 'audio/ogg') or (server_type = 'application/mpeg') or (server_type = 'audio/mpeg'))">
-                                    <audio controls="controls" preload="none"
-                                        class="audio">
-                                        <source src="{@mount}" type="{server_type}" /> Your browser
-        does not support HTML5 audio. </audio>
+                                <xsl:if test="server_type and ((server_type = 'application/ogg') or (server_type = 'audio/ogg') or (server_type = 'application/mpeg') or (server_type = 'audio/mpeg'))">
+                                    <audio controls="controls" preload="none" class="audio">
+                                        <source src="{@mount}" type="{server_type}"/>
+                                        Your browser
+                                                does not support HTML5 audio.
+                                    </audio>
                                     <canvas class="canvas"></canvas>
                                 </xsl:if>
-                                <xsl:if
-                                    test="server_type and ((server_type = 'application/webm') or (server_type = 'video/webm'))">
+                                <xsl:if test="server_type and ((server_type = 'application/webm') or (server_type = 'video/webm'))">
                                     <video controls="controls" preload="none">
-                                        <source src="{@mount}" type="{server_type}" /> Your browser
-        does not support HTML5 video. </video>
+                                        <source src="{@mount}" type="{server_type}"/>
+                                        Your browser
+                                                does not support HTML5 video.
+                                    </video>
                                 </xsl:if>
                                 <table class="mount_info_table">
                                     <tbody>
@@ -50,8 +54,9 @@
                                             <tr>
                                                 <td>Stream Name</td>
                                                 <td>
-                                                    <b>: </b>
-                                                    <xsl:value-of select="server_name" />
+                                                    <b>:
+                                                    </b>
+                                                    <xsl:value-of select="server_name"/>
                                                 </td>
                                             </tr>
                                         </xsl:if>
@@ -59,8 +64,9 @@
                                             <tr>
                                                 <td>Title</td>
                                                 <td>
-                                                    <b>: </b>
-                                                    <xsl:value-of select="title" />
+                                                    <b>:
+                                                    </b>
+                                                    <xsl:value-of select="title"/>
                                                 </td>
                                             </tr>
                                         </xsl:if>
@@ -68,8 +74,9 @@
                                             <tr>
                                                 <td>Artist</td>
                                                 <td>
-                                                    <b>: </b>
-                                                    <xsl:value-of select="artist" />
+                                                    <b>:
+                                                    </b>
+                                                    <xsl:value-of select="artist"/>
                                                 </td>
                                             </tr>
                                         </xsl:if>
@@ -77,8 +84,9 @@
                                             <tr>
                                                 <td>Genre</td>
                                                 <td>
-                                                    <b>: </b>
-                                                    <xsl:value-of select="genre" />
+                                                    <b>:
+                                                    </b>
+                                                    <xsl:value-of select="genre"/>
                                                 </td>
                                             </tr>
                                         </xsl:if>
@@ -86,8 +94,9 @@
                                             <tr>
                                                 <td>Content Type</td>
                                                 <td>
-                                                    <b>: </b>
-                                                    <xsl:value-of select="server_type" />
+                                                    <b>:
+                                                    </b>
+                                                    <xsl:value-of select="server_type"/>
                                                 </td>
                                             </tr>
                                         </xsl:if>
@@ -95,8 +104,9 @@
                                             <tr>
                                                 <td>Bitrate</td>
                                                 <td>
-                                                    <b>: </b>
-                                                    <xsl:value-of select="bitrate" />
+                                                    <b>:
+                                                    </b>
+                                                    <xsl:value-of select="bitrate"/>
                                                 </td>
                                             </tr>
                                         </xsl:if>
@@ -104,8 +114,9 @@
                                             <tr>
                                                 <td>Quality</td>
                                                 <td>
-                                                    <b>: </b>
-                                                    <xsl:value-of select="quality" />
+                                                    <b>:
+                                                    </b>
+                                                    <xsl:value-of select="quality"/>
                                                 </td>
                                             </tr>
                                         </xsl:if>
@@ -113,8 +124,9 @@
                                             <tr>
                                                 <td>Framesize</td>
                                                 <td>
-                                                    <b>: </b>
-                                                    <xsl:value-of select="frame_size" />
+                                                    <b>:
+                                                    </b>
+                                                    <xsl:value-of select="frame_size"/>
                                                 </td>
                                             </tr>
                                         </xsl:if>
@@ -122,8 +134,9 @@
                                             <tr>
                                                 <td>Framerate</td>
                                                 <td>
-                                                    <b>: </b>
-                                                    <xsl:value-of select="frame_rate" />
+                                                    <b>:
+                                                    </b>
+                                                    <xsl:value-of select="frame_rate"/>
                                                 </td>
                                             </tr>
                                         </xsl:if>
@@ -131,8 +144,9 @@
                                             <tr>
                                                 <td>Video Quality</td>
                                                 <td>
-                                                    <b>: </b>
-                                                    <xsl:value-of select="video_quality" />
+                                                    <b>:
+                                                    </b>
+                                                    <xsl:value-of select="video_quality"/>
                                                 </td>
                                             </tr>
                                         </xsl:if>
@@ -140,8 +154,9 @@
                                             <tr>
                                                 <td>Stream started</td>
                                                 <td>
-                                                    <b>: </b>
-                                                    <xsl:value-of select="stream_start" />
+                                                    <b>:
+                                                    </b>
+                                                    <xsl:value-of select="stream_start"/>
                                                 </td>
                                             </tr>
                                         </xsl:if>
@@ -149,8 +164,9 @@
                                             <tr>
                                                 <td>Audiences</td>
                                                 <td>
-                                                    <b>: </b>
-                                                    <xsl:value-of select="listeners" />
+                                                    <b>:
+                                                    </b>
+                                                    <xsl:value-of select="listeners"/>
                                                 </td>
                                             </tr>
                                         </xsl:if>
@@ -158,8 +174,9 @@
                                             <tr>
                                                 <td>Peak Audiences</td>
                                                 <td>
-                                                    <b>: </b>
-                                                    <xsl:value-of select="listener_peak" />
+                                                    <b>:
+                                                    </b>
+                                                    <xsl:value-of select="listener_peak"/>
                                                 </td>
                                             </tr>
                                         </xsl:if>
@@ -167,8 +184,9 @@
                                             <tr>
                                                 <td>Description</td>
                                                 <td>
-                                                    <b>: </b>
-                                                    <xsl:value-of select="server_description" />
+                                                    <b>:
+                                                    </b>
+                                                    <xsl:value-of select="server_description"/>
                                                 </td>
                                             </tr>
                                         </xsl:if>
@@ -176,10 +194,10 @@
                                             <tr>
                                                 <td>Stream URL</td>
                                                 <td>
-                                                    <b>: </b>
+                                                    <b>:
+                                                    </b>
                                                     <a href="{server_url}">
-                                                        <xsl:value-of
-                                                            select="server_url" />
+                                                        <xsl:value-of select="server_url"/>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -194,19 +212,16 @@
                                         <div class="link_list">
                                             <span>
                                                 <a href="{@mount}" target="new" title="Direct Link">
-        Direct</a>
+                                                    Direct</a>
                                             </span>
                                             <span>
-                                                <a href="{@mount}.m3u" target="new"
-                                                    title="M3U Playlist">M3U</a>
+                                                <a href="{@mount}.m3u" target="new" title="M3U Playlist">M3U</a>
                                             </span>
                                             <span>
-                                                <a href="{@mount}.xspf" target="new"
-                                                    title="XSPF Playlist">XSPF</a>
+                                                <a href="{@mount}.xspf" target="new" title="XSPF Playlist">XSPF</a>
                                             </span>
                                             <span>
-                                                <a href="{@mount}.vclt" target="new"
-                                                    title="VCLT Playlist">VCLT</a>
+                                                <a href="{@mount}.vclt" target="new" title="VCLT Playlist">VCLT</a>
                                             </span>
                                         </div>
                                     </xsl:otherwise>
@@ -214,14 +229,18 @@
                             </div>
                         </xsl:when>
                         <xsl:otherwise>
-                            <h3> : <xsl:value-of select="@mount" /> - Not Connected </h3>
+                            <h3>
+                                :
+                                <xsl:value-of select="@mount"/>
+                                - Not Connected
+                            </h3>
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:for-each>
-                <div id="footer"><a href="https://github.com/bitscoper/Bitscoper_Radio/"
-                        title="Source Code" target="new">Source Code</a> | © <a
-                        href="https://bitscoper.dev/"
-                        title="Abdullah As-Sadeed" target="new">Abdullah As-Sadeed</a>
+                <div id="footer">
+                    <a href="https://github.com/bitscoper/Bitscoper_Radio/" title="Source Code" target="new">Source Code</a>
+                    | ©
+                    <a href="https://bitscoper.dev/" title="Abdullah As-Sadeed" target="new">Abdullah As-Sadeed</a>
                 </div>
                 <script src="Script.js"></script>
             </body>
