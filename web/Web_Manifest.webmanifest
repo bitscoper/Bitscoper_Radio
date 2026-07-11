@@ -70,12 +70,13 @@
   "scope": "/",
   "scope_extensions": [
     {
-      "origin": "https://radio.bitscoper.dev/"
+      "origin": "https://radio.bitscoper.dev/",
+      "type": "origin"
     }
   ],
   "screenshots": [
     {
-      "src": "/Assets/Images/Screenshot.jpeg",
+      "src": "/Screenshots/Wide/1920x1080.jpeg",
       "type": "image/jpeg",
       "sizes": "1920x1080",
       "form_factor": "wide",
