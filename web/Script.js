@@ -2,119 +2,71 @@
 
 "use strict";
 
-try {
-  console.log(
-    "%c%s",
-    "font-size: 16px; color: red; font-weight: bold;",
-    "Do not input anything here.",
-  );
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/Service_Worker.js");
+}
 
-  document.oncontextmenu = function (menu) {
-    menu.preventDefault();
-    alert("Context Menu is not allowed.");
-    return false;
-  };
+document.addEventListener("DOMContentLoaded", function () {
+  var audios = document.querySelectorAll(".audio");
+  if (!audios.length) return;
 
-  document.onkeydown = function (keyboard) {
-    if (
-      keyboard.key == "F12" ||
-      (keyboard.ctrlKey && keyboard.shiftKey && keyboard.key == "i") ||
-      (keyboard.ctrlKey && keyboard.shiftKey && keyboard.key == "j") ||
-      (keyboard.ctrlKey && keyboard.key == "u")
-    ) {
-      keyboard.preventDefault();
+  var canvases = document.querySelectorAll(".canvas");
 
-      alert("Developer tools are not allowed.");
+  var audioContext = new window.AudioContext();
 
-      return false;
-    } else if (
-      keyboard.Code == "PrintScreen" ||
-      (keyboard.ctrlKey && keyboard.key == "p")
-    ) {
-      keyboard.preventDefault();
+  audios.forEach(function (audio, index) {
+    var canvas = canvases[index];
+    if (!canvas) return;
 
-      alert("Printing is not allowed.");
+    var canvasContext = canvas.getContext("2d");
+    var analyser = audioContext.createAnalyser();
+    var mediaElementSource = audioContext.createMediaElementSource(audio);
 
-      return false;
-    } else if (keyboard.ctrlKey && keyboard.key == "s") {
-      keyboard.preventDefault();
+    mediaElementSource.connect(analyser);
+    analyser.connect(audioContext.destination);
 
-      alert("Saving is not allowed.");
+    analyser.fftSize = 2048;
+    var bufferLength = analyser.fftSize;
+    var dataArray = new Uint8Array(bufferLength);
 
-      return false;
-    }
-  };
+    function visualize() {
+      requestAnimationFrame(visualize);
 
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("Service_Worker.js");
-  }
+      analyser.getByteTimeDomainData(dataArray);
 
-  document.addEventListener("DOMContentLoaded", function () {
-    var audios = document.querySelectorAll(".audio");
-    if (!audios.length) return;
+      canvasContext.fillRect(0, 0, canvas.width, canvas.height);
+      canvasContext.fillStyle = "#FFFFFF";
+      canvasContext.lineWidth = 1;
+      canvasContext.strokeStyle = "#00E1D4";
+      canvasContext.beginPath();
 
-    var canvases = document.querySelectorAll(".canvas");
+      var sliceWidth = canvas.width / bufferLength;
+      var x = 0;
 
-    var audioContext = new window.AudioContext();
+      for (var iteration = 0; iteration < bufferLength; iteration++) {
+        var value = dataArray[iteration] / 128.0;
+        var y = (value * canvas.height) / 2;
 
-    audios.forEach(function (audio, index) {
-      var canvas = canvases[index];
-      if (!canvas) return;
-
-      var canvasContext = canvas.getContext("2d");
-      var analyser = audioContext.createAnalyser();
-      var mediaElementSource = audioContext.createMediaElementSource(audio);
-
-      mediaElementSource.connect(analyser);
-      analyser.connect(audioContext.destination);
-
-      analyser.fftSize = 2048;
-      var bufferLength = analyser.fftSize;
-      var dataArray = new Uint8Array(bufferLength);
-
-      function visualize() {
-        requestAnimationFrame(visualize);
-
-        analyser.getByteTimeDomainData(dataArray);
-
-        canvasContext.fillRect(0, 0, canvas.width, canvas.height);
-        canvasContext.fillStyle = "#FFFFFF";
-        canvasContext.lineWidth = 1;
-        canvasContext.strokeStyle = "#00E1D4";
-        canvasContext.beginPath();
-
-        var sliceWidth = canvas.width / bufferLength;
-        var x = 0;
-
-        for (var iteration = 0; iteration < bufferLength; iteration++) {
-          var value = dataArray[iteration] / 128.0;
-          var y = (value * canvas.height) / 2;
-
-          if (iteration === 0) {
-            canvasContext.moveTo(x, y);
-          } else {
-            canvasContext.lineTo(x, y);
-          }
-
-          x += sliceWidth;
+        if (iteration === 0) {
+          canvasContext.moveTo(x, y);
+        } else {
+          canvasContext.lineTo(x, y);
         }
 
-        canvasContext.lineTo(canvas.width, canvas.height / 2);
-        canvasContext.stroke();
+        x += sliceWidth;
       }
 
-      audio.addEventListener("play", function () {
-        audioContext.resume();
+      canvasContext.lineTo(canvas.width, canvas.height / 2);
+      canvasContext.stroke();
+    }
 
-        canvas.style.display = "block";
-        canvas.width = canvas.offsetWidth;
-        canvas.height = canvas.offsetHeight;
-        visualize();
-      });
+    audio.addEventListener("play", function () {
+      audioContext.resume();
+
+      canvas.style.display = "block";
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+      visualize();
     });
   });
-} catch (error) {
-  console.error(error);
-  alert(error);
-} finally {
-}
+});
