@@ -7,8 +7,8 @@ if ("serviceWorker" in navigator) {
 }
 
 window.document.onload = function () {
-  var audios = window.document.getElementsByTagName("audio");
-  var canvases = window.document.getElementsByTagName("canvas");
+  var audios = Array.from(window.document.getElementsByTagName("audio"));
+  var canvases = Array.from(window.document.getElementsByTagName("canvas"));
 
   if (audios.length && canvases.length) {
     var audioContext = new window.AudioContext();

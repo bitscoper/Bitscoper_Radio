@@ -54,7 +54,7 @@
                                     <tbody>
                                         <xsl:if test="server_name">
                                             <tr>
-                                                <td>Stream Name</td>
+                                                <th>Stream Name</th>
                                                 <td>
                                                     <b>:
                                                     </b>
@@ -64,7 +64,7 @@
                                         </xsl:if>
                                         <xsl:if test="title">
                                             <tr>
-                                                <td>Title</td>
+                                                <th>Content Title</th>
                                                 <td>
                                                     <b>:
                                                     </b>
@@ -74,7 +74,7 @@
                                         </xsl:if>
                                         <xsl:if test="artist">
                                             <tr>
-                                                <td>Artist</td>
+                                                <th>Artist</th>
                                                 <td>
                                                     <b>:
                                                     </b>
@@ -84,7 +84,7 @@
                                         </xsl:if>
                                         <xsl:if test="genre">
                                             <tr>
-                                                <td>Genre</td>
+                                                <th>Genre</th>
                                                 <td>
                                                     <b>:
                                                     </b>
@@ -94,7 +94,7 @@
                                         </xsl:if>
                                         <xsl:if test="server_type">
                                             <tr>
-                                                <td>Content Type</td>
+                                                <th>Content Type</th>
                                                 <td>
                                                     <b>:
                                                     </b>
@@ -104,7 +104,7 @@
                                         </xsl:if>
                                         <xsl:if test="bitrate">
                                             <tr>
-                                                <td>Bitrate</td>
+                                                <th>Bit Rate</th>
                                                 <td>
                                                     <b>:
                                                     </b>
@@ -114,7 +114,7 @@
                                         </xsl:if>
                                         <xsl:if test="quality">
                                             <tr>
-                                                <td>Quality</td>
+                                                <th>Quality</th>
                                                 <td>
                                                     <b>:
                                                     </b>
@@ -124,7 +124,7 @@
                                         </xsl:if>
                                         <xsl:if test="frame_size">
                                             <tr>
-                                                <td>Framesize</td>
+                                                <th>Frame Size</th>
                                                 <td>
                                                     <b>:
                                                     </b>
@@ -134,7 +134,7 @@
                                         </xsl:if>
                                         <xsl:if test="frame_rate">
                                             <tr>
-                                                <td>Framerate</td>
+                                                <th>Frame Rate</th>
                                                 <td>
                                                     <b>:
                                                     </b>
@@ -144,7 +144,7 @@
                                         </xsl:if>
                                         <xsl:if test="video_quality">
                                             <tr>
-                                                <td>Video Quality</td>
+                                                <th>Video Quality</th>
                                                 <td>
                                                     <b>:
                                                     </b>
@@ -154,7 +154,7 @@
                                         </xsl:if>
                                         <xsl:if test="stream_start">
                                             <tr>
-                                                <td>Stream started</td>
+                                                <th>Stream Started</th>
                                                 <td>
                                                     <b>:
                                                     </b>
@@ -164,7 +164,7 @@
                                         </xsl:if>
                                         <xsl:if test="listeners">
                                             <tr>
-                                                <td>Audiences</td>
+                                                <th>Audiences</th>
                                                 <td>
                                                     <b>:
                                                     </b>
@@ -174,7 +174,7 @@
                                         </xsl:if>
                                         <xsl:if test="listener_peak">
                                             <tr>
-                                                <td>Peak Audiences</td>
+                                                <th>Peak Audiences</th>
                                                 <td>
                                                     <b>:
                                                     </b>
@@ -184,7 +184,7 @@
                                         </xsl:if>
                                         <xsl:if test="server_description">
                                             <tr>
-                                                <td>Description</td>
+                                                <th>Description</th>
                                                 <td>
                                                     <b>:
                                                     </b>
@@ -194,7 +194,7 @@
                                         </xsl:if>
                                         <xsl:if test="server_url">
                                             <tr>
-                                                <td>Stream URL</td>
+                                                <th>Stream URL</th>
                                                 <td>
                                                     <b>:
                                                     </b>
