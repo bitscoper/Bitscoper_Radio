@@ -4,9 +4,13 @@
 
 An XSLT-Driven PWA UI for Icecast Servers
 
+[radio.bitscoper.dev](https://radio.bitscoper.dev/)
+
 <br />
 
-![Screenshot](/web/Screenshots/Wide/1920x1080.jpeg)
+![Wide Screenshot](/web/Screenshots/Wide/1920x1080.png)
+
+![Narrow Screenshot](/web/Screenshots/Narrow/750x1334.png)
 
 </div>
 

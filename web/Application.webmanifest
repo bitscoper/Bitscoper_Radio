@@ -76,10 +76,17 @@
   ],
   "screenshots": [
     {
-      "src": "/Screenshots/Wide/1920x1080.jpeg",
-      "type": "image/jpeg",
+      "src": "/Screenshots/Wide/1920x1080.png",
+      "type": "image/png",
       "sizes": "1920x1080",
       "form_factor": "wide",
+      "label": "Bitscoper Radio"
+    },
+    {
+      "src": "/Screenshots/Narrow/750x1334.png",
+      "type": "image/png",
+      "sizes": "750x1334",
+      "form_factor": "narrow",
       "label": "Bitscoper Radio"
     }
   ],
