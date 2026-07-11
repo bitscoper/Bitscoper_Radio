@@ -56,8 +56,6 @@
                                             <tr>
                                                 <th>Stream Name</th>
                                                 <td>
-                                                    <b>:
-                                                    </b>
                                                     <xsl:value-of select="server_name"/>
                                                 </td>
                                             </tr>
@@ -66,8 +64,6 @@
                                             <tr>
                                                 <th>Content Title</th>
                                                 <td>
-                                                    <b>:
-                                                    </b>
                                                     <xsl:value-of select="title"/>
                                                 </td>
                                             </tr>
@@ -76,8 +72,6 @@
                                             <tr>
                                                 <th>Artist</th>
                                                 <td>
-                                                    <b>:
-                                                    </b>
                                                     <xsl:value-of select="artist"/>
                                                 </td>
                                             </tr>
@@ -86,8 +80,6 @@
                                             <tr>
                                                 <th>Genre</th>
                                                 <td>
-                                                    <b>:
-                                                    </b>
                                                     <xsl:value-of select="genre"/>
                                                 </td>
                                             </tr>
@@ -96,8 +88,6 @@
                                             <tr>
                                                 <th>Content Type</th>
                                                 <td>
-                                                    <b>:
-                                                    </b>
                                                     <xsl:value-of select="server_type"/>
                                                 </td>
                                             </tr>
@@ -106,8 +96,6 @@
                                             <tr>
                                                 <th>Bit Rate</th>
                                                 <td>
-                                                    <b>:
-                                                    </b>
                                                     <xsl:value-of select="bitrate"/>
                                                 </td>
                                             </tr>
@@ -116,8 +104,6 @@
                                             <tr>
                                                 <th>Quality</th>
                                                 <td>
-                                                    <b>:
-                                                    </b>
                                                     <xsl:value-of select="quality"/>
                                                 </td>
                                             </tr>
@@ -126,8 +112,6 @@
                                             <tr>
                                                 <th>Frame Size</th>
                                                 <td>
-                                                    <b>:
-                                                    </b>
                                                     <xsl:value-of select="frame_size"/>
                                                 </td>
                                             </tr>
@@ -136,8 +120,6 @@
                                             <tr>
                                                 <th>Frame Rate</th>
                                                 <td>
-                                                    <b>:
-                                                    </b>
                                                     <xsl:value-of select="frame_rate"/>
                                                 </td>
                                             </tr>
@@ -146,8 +128,6 @@
                                             <tr>
                                                 <th>Video Quality</th>
                                                 <td>
-                                                    <b>:
-                                                    </b>
                                                     <xsl:value-of select="video_quality"/>
                                                 </td>
                                             </tr>
@@ -156,8 +136,6 @@
                                             <tr>
                                                 <th>Stream Started</th>
                                                 <td>
-                                                    <b>:
-                                                    </b>
                                                     <xsl:value-of select="stream_start"/>
                                                 </td>
                                             </tr>
@@ -166,8 +144,6 @@
                                             <tr>
                                                 <th>Audiences</th>
                                                 <td>
-                                                    <b>:
-                                                    </b>
                                                     <xsl:value-of select="listeners"/>
                                                 </td>
                                             </tr>
@@ -176,8 +152,6 @@
                                             <tr>
                                                 <th>Peak Audiences</th>
                                                 <td>
-                                                    <b>:
-                                                    </b>
                                                     <xsl:value-of select="listener_peak"/>
                                                 </td>
                                             </tr>
@@ -186,8 +160,6 @@
                                             <tr>
                                                 <th>Description</th>
                                                 <td>
-                                                    <b>:
-                                                    </b>
                                                     <xsl:value-of select="server_description"/>
                                                 </td>
                                             </tr>
@@ -196,8 +168,6 @@
                                             <tr>
                                                 <th>Stream URL</th>
                                                 <td>
-                                                    <b>:
-                                                    </b>
                                                     <a href="{server_url}">
                                                         <xsl:value-of select="server_url"/>
                                                     </a>

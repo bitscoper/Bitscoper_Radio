@@ -6,7 +6,7 @@ if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("/Service_Worker.js");
 }
 
-window.document.onload = function () {
+window.onload = function () {
   var audios = Array.from(window.document.getElementsByTagName("audio"));
   var canvases = Array.from(window.document.getElementsByTagName("canvas"));
 
