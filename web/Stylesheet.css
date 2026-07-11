@@ -33,6 +33,7 @@ body {
 }
 
 body {
+  border: 1px solid var(--surface0);
   background-color: var(--base);
   line-height: 1.5;
   text-align: center;
@@ -40,78 +41,98 @@ body {
   color: var(--text);
 }
 
-h1 {
-  margin: 0px;
+header {
+  border-bottom: 1px solid var(--surface0);
   background-color: var(--mantle);
-  color: var(--lavender);
+  padding: 3rem 1rem;
 }
 
-h3 {
+header h1 {
   margin: 0px;
-  padding: 0px;
-}
-
-a {
-  color: var(--text);
-  transition: color 0.2s;
-}
-
-a:hover {
   color: var(--lavender);
 }
 
-.mounts {
+section {
   display: inline-block;
   margin: 20px 0px 20px 0px;
   vertical-align: middle;
-  background-color: white;
-  border-radius: 10px;
+  border: 1px solid var(--surface0);
+  background-color: var(--mantle);
+  border-radius: 16px;
   padding: 20px;
 }
 
-.mounts h3 {
+@media screen and (min-width: 641px) {
+  section {
+    margin: 20px;
+  }
+}
+
+section h3 {
   margin-bottom: 20px;
+  margin: 0px;
+  padding: 0px;
+  color: var(--lavender);
 }
 
-audio,
-video {
-  border-radius: 10px;
+section audio,
+section video {
+  border: 1px solid var(--surface0);
+  border-radius: 16px;
 }
 
-.canvas {
+section canvas {
   display: none;
   margin-top: 20px;
   width: 100%;
+  border: 1px solid var(--surface0);
   background: transparent;
-  border-radius: 10px;
+  border-radius: 16px;
 }
 
-.mount_info_table {
+section table {
   margin: 20px 0px;
   text-align: left;
 }
 
-.mount_info_table tr td {
+section table tr td {
   padding-bottom: 5px;
 }
 
-.link_list {
+section div {
   display: flex;
   flex-direction: row;
 }
 
-.link_list span {
+section div span {
   display: inline-block;
   flex: 1;
 }
 
-#footer {
-  padding: 20px;
+section div span a {
+  color: var(--text);
+  transition: color 0.2s;
+}
+
+section div span a:hover,
+section div span a:focus {
+  color: var(--lavender);
+}
+
+footer {
+  border-top: 1px solid var(--surface0);
+  background-color: var(--mantle);
+  padding: 2rem;
   color: var(--text);
 }
 
-@media screen and (min-width: 641px) {
-  .mounts {
-    margin: 20px;
-  }
+footer a {
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.2s;
+}
+
+footer a:hover,
+footer a:focus {
+  color: var(--lavender);
 }

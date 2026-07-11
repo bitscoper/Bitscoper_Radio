@@ -7,10 +7,10 @@ if ("serviceWorker" in navigator) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  var audios = document.querySelectorAll(".audio");
+  var audios = document.getElementsByTagName("audio");
   if (!audios.length) return;
 
-  var canvases = document.querySelectorAll(".canvas");
+  var canvases = document.getElementsByTagName("canvas");
 
   var audioContext = new window.AudioContext();
 

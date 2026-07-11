@@ -24,22 +24,24 @@
                 <meta name="google-site-verification" content="nPqxZsjTdkgkE2-u1AvvvuMZWIk_qJWno_eTHkJAUL0"/>
             </head>
             <body lang="en-US">
-                <h1 id="header">Bitscoper Radio</h1>
+                <header>
+                    <h1>Bitscoper Radio</h1>
+                </header>
                 <xsl:for-each select="source">
                     <xsl:choose>
                         <xsl:when test="listeners">
-                            <div class="mounts">
+                            <section>
                                 <h3>
                                     Mount Point:
                                     <xsl:value-of select="@mount"/>
                                 </h3>
                                 <xsl:if test="server_type and ((server_type = 'application/ogg') or (server_type = 'audio/ogg') or (server_type = 'application/mpeg') or (server_type = 'audio/mpeg'))">
-                                    <audio controls="controls" preload="none" class="audio">
+                                    <audio controls="controls" preload="none">
                                         <source src="{@mount}" type="{server_type}"/>
                                         Your browser
                                                 does not support HTML5 audio.
                                     </audio>
-                                    <canvas class="canvas"></canvas>
+                                    <canvas></canvas>
                                 </xsl:if>
                                 <xsl:if test="server_type and ((server_type = 'application/webm') or (server_type = 'video/webm'))">
                                     <video controls="controls" preload="none">
@@ -48,7 +50,7 @@
                                                 does not support HTML5 video.
                                     </video>
                                 </xsl:if>
-                                <table class="mount_info_table">
+                                <table>
                                     <tbody>
                                         <xsl:if test="server_name">
                                             <tr>
@@ -206,27 +208,27 @@
                                 </table>
                                 <xsl:choose>
                                     <xsl:when test="authenticator">
-                                        <a class="auth" href="/auth.xsl">Login</a>
+                                        <a href="/auth.xsl">Login</a>
                                     </xsl:when>
                                     <xsl:otherwise>
-                                        <div class="link_list">
+                                        <div>
                                             <span>
-                                                <a href="{@mount}" target="new" title="Direct Link">
+                                                <a href="{@mount}" target="_blank" title="Direct Link">
                                                     Direct</a>
                                             </span>
                                             <span>
-                                                <a href="{@mount}.m3u" target="new" title="M3U Playlist">M3U</a>
+                                                <a href="{@mount}.m3u" target="_blank" title="M3U Playlist">M3U</a>
                                             </span>
                                             <span>
-                                                <a href="{@mount}.xspf" target="new" title="XSPF Playlist">XSPF</a>
+                                                <a href="{@mount}.xspf" target="_blank" title="XSPF Playlist">XSPF</a>
                                             </span>
                                             <span>
-                                                <a href="{@mount}.vclt" target="new" title="VCLT Playlist">VCLT</a>
+                                                <a href="{@mount}.vclt" target="_blank" title="VCLT Playlist">VCLT</a>
                                             </span>
                                         </div>
                                     </xsl:otherwise>
                                 </xsl:choose>
-                            </div>
+                            </section>
                         </xsl:when>
                         <xsl:otherwise>
                             <h3>
@@ -237,11 +239,9 @@
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:for-each>
-                <div id="footer">
-                    <a href="https://github.com/bitscoper/Bitscoper_Radio/" title="Source Code" target="new">Source Code</a>
-                    | ©
-                    <a href="https://bitscoper.dev/" title="Abdullah As-Sadeed" target="new">Abdullah As-Sadeed</a>
-                </div>
+                <footer>
+                    <a href="https://github.com/bitscoper/Bitscoper_Radio/" title="Source Code" target="_blank">Source Code</a>
+                </footer>
                 <script src="Script.js"></script>
             </body>
         </html>
