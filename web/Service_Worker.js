@@ -2,38 +2,48 @@
 
 "use strict";
 
-const offline_url = "Offline.txt";
+const cacheName = "Bitscoper_Radio";
+const offlineFallbackPage = "Offline_Fallback.txt";
 
-self.addEventListener("install", function () {
-  self.skipWaiting();
+self.onmessage = function (event) {
+  if (event.data && event.data?.type === "SKIP_WAITING") {
+    self.skipWaiting();
+  }
+};
+
+self.addEventListener("install", async function (event) {
+  event.waitUntil(
+    caches.open(cacheName).then((cache) => cache.add(offlineFallbackPage)),
+  );
 });
 
-self.addEventListener("activate", function (activation) {
-  activation.waitUntil(
-    caches.keys().then(function (cache_names) {
-      for (let cache_name of cache_names) {
-        caches.delete(cache_name);
+self.addEventListener("activate", function (event) {
+  event.waitUntil(
+    (async function () {
+      if ("navigationPreload" in self.registration) {
+        await self.registration.navigationPreload.disable();
       }
 
-      caches.open("client").then(function (cache) {
-        return cache.addAll([offline_url]);
-      });
-    })
+      await self.clients.claim();
+    })(),
   );
 });
 
-self.addEventListener("fetch", function (fetching) {
-  fetching.respondWith(
-    caches
-      .match(fetching.request)
-      .then(function (cached_response) {
-        return cached_response || fetch(fetching.request);
-      })
-      .catch(function (error) {
-        if (fetching.request.mode === "navigate") {
-          return caches.match(offline_url);
+self.addEventListener("fetch", function (event) {
+  if (event.request.mode === "navigate") {
+    event.respondWith(
+      (async function () {
+        try {
+          const networkResponse = await fetch(event.request);
+
+          return networkResponse;
+        } catch (error) {
+          const cache = await caches.open(cacheName);
+          const cachedResponse = await cache.match(offlineFallbackPage);
+
+          return cachedResponse;
         }
-        throw error;
-      })
-  );
+      })(),
+    );
+  }
 });

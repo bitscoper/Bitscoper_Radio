@@ -1,3 +1,6 @@
-Sitemap: https://radio.bitscoper.dev/sitemap.xml
-User-Agent: *
+# By Abdullah As-Sadeed
+User-agent: *
+Allow: /
 Disallow:
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Sitemap: https://radio.bitscoper.dev/sitemap.xml
