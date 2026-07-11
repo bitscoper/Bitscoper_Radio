@@ -35,9 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
       analyser.getByteTimeDomainData(dataArray);
 
       canvasContext.fillRect(0, 0, canvas.width, canvas.height);
-      canvasContext.fillStyle = "#FFFFFF";
+      canvasContext.fillStyle = "#1e1e2e";
       canvasContext.lineWidth = 1;
-      canvasContext.strokeStyle = "#00E1D4";
+      canvasContext.strokeStyle = "#b4befe";
       canvasContext.beginPath();
 
       var sliceWidth = canvas.width / bufferLength;

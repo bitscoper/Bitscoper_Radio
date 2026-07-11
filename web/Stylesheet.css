@@ -1,58 +1,72 @@
 /* By Abdullah As-Sadeed */
 
-html {
-  margin: 0;
-  padding: 0;
+:root {
+  --crust: #11111b;
+  --mantle: #181825;
+  --base: #1e1e2e;
+
+  --surface0: #313244;
+  --surface1: #45475a;
+  --surface2: #585b70;
+
+  --overlay0: #6c7086;
+  --overlay1: #7f849c;
+  --overlay2: #9399b2;
+
+  --subtext0: #a6adc8;
+  --subtext1: #bac2de;
+  --text: #cdd6f4;
+
+  --lavender: #b4befe;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-  background-color: #d8efdb;
-  color: #000000;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.625;
-  margin: 0;
-  padding: 0;
+  background-color: var(--base);
+  line-height: 1.5;
   text-align: center;
-}
-
-a {
-  color: rgb(0, 201, 191);
-  font-weight: 500;
-}
-
-a:hover {
-  color: #00e1d4;
+  font-family: system-ui, sans-serif;
+  color: var(--text);
 }
 
 h1 {
-  background-color: #00c9bf;
-  color: #fff;
-  font-size: 3em;
-  font-weight: 500;
-  margin-top: 0;
-  padding: 20px;
+  margin: 0px;
+  background-color: var(--mantle);
+  color: var(--lavender);
 }
 
 h3 {
-  font-size: 24px;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
-h3 small {
-  color: #fff;
-  font-size: 70%;
-  padding-left: 15px;
+a {
+  color: var(--text);
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--lavender);
 }
 
 .mounts {
+  display: inline-block;
+  margin: 20px 0px 20px 0px;
+  vertical-align: middle;
   background-color: white;
   border-radius: 10px;
-  display: inline-block;
-  margin: 20px 0 20px 0;
   padding: 20px;
-  vertical-align: middle;
 }
 
 .mounts h3 {
@@ -65,15 +79,15 @@ video {
 }
 
 .canvas {
-  background: transparent;
-  border-radius: 10px;
   display: none;
   margin-top: 20px;
   width: 100%;
+  background: transparent;
+  border-radius: 10px;
 }
 
 .mount_info_table {
-  margin: 20px 0;
+  margin: 20px 0px;
   text-align: left;
 }
 
@@ -92,9 +106,8 @@ video {
 }
 
 #footer {
-  color: #666;
-  font-size: small;
   padding: 20px;
+  color: var(--text);
 }
 
 @media screen and (min-width: 641px) {

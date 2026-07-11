@@ -1,5 +1,5 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-    <xsl:output omit-xml-declaration="no" method="xml" doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" indent="yes" encoding="UTF-8"/>
+    <xsl:output omit-xml-declaration="no" method="xml" indent="yes" encoding="UTF-8"/>
     <xsl:template
         match="/icestats">
         <!-- By Abdullah As-Sadeed -->
@@ -9,9 +9,9 @@
                 <base href="https://radio.bitscoper.dev/"/>
                 <title>Bitscoper Radio</title>
                 <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
-                <meta name="theme-color" content="rgb(66, 66, 66)"/>
+                <meta name="theme-color" content="#1e1e2e"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
-                <meta name="color-scheme" content="only light"/>
+                <meta name="color-scheme" content="dark"/>
                 <link rel="stylesheet" type="text/css" href="/Stylesheet.css"/>
                 <meta name="mobile-web-app-capable" content="yes"/>
                 <link rel="manifest" href="/Application.webmanifest"/>

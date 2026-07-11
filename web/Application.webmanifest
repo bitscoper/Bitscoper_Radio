@@ -1,5 +1,5 @@
 {
-  "background_color": "#FFFFFF",
+  "background_color": "#1e1e2e",
   "categories": ["music", "multimedia", "video"],
   "description": "An Icecast UI",
   "dir": "ltr",
@@ -111,5 +111,5 @@
       "url": "/"
     }
   },
-  "theme_color": "#424242"
+  "theme_color": "#1e1e2e"
 }
