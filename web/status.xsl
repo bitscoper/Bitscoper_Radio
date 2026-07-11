@@ -14,7 +14,7 @@
                 <link rel="manifest" href="Web_Manifest.webmanifest" />
                 <meta name="theme-color" content="rgb(66, 66, 66)" />
                 <link rel="icon" type="image/x-icon" href="favicon.ico" />
-                <link rel="apple-touch-icon" href="Assets/Images/Logo_192x192.png" />
+                <link rel="apple-touch-icon" href="/Icons/Transparent/192x192.png" />
                 <title>Bitscoper Radio</title>
                 <meta name="description" content="Bitscoper Radio" />
                 <meta name="keywords" content="stream, radio, video, audio, broadcast" />

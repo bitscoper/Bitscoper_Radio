@@ -6,7 +6,7 @@ An Icecast UI
 
 <br />
 
-![Screenshot](web/Assets/Images/Screenshot.jpeg)
+![Screenshot](/web/Screenshots/Wide/1920x1080.jpeg)
 
 </div>
 
