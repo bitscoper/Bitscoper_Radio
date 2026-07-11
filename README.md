@@ -2,7 +2,7 @@
 
 # Bitscoper Radio
 
-An Icecast UI
+An XSLT-Driven PWA UI for Icecast Servers
 
 <br />
 

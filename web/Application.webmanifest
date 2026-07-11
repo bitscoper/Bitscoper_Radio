@@ -1,7 +1,7 @@
 {
   "background_color": "#1e1e2e",
   "categories": ["music", "multimedia", "video"],
-  "description": "An Icecast UI",
+  "description": "An XSLT-Driven PWA UI for Icecast Servers",
   "dir": "ltr",
   "display": "standalone",
   "display_override": ["window-controls-overlay", "tabbed", "standalone"],
@@ -88,7 +88,7 @@
     {
       "name": "Bitscoper Radio",
       "url": "/",
-      "description": "An Icecast UI",
+      "description": "An XSLT-Driven PWA UI for Icecast Servers",
       "icons": [
         {
           "src": "/Icons/Transparent/192x192.png",

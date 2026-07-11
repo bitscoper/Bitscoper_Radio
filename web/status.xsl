@@ -19,7 +19,7 @@
                 <link rel="apple-touch-icon" href="/Icons/Transparent/192x192.png" type="image/png"/>
                 <meta name="robots" content="index, follow"/>
                 <meta name="author" content="Abdullah As-Sadeed"/>
-                <meta name="description" content="An Icecast UI"/>
+                <meta name="description" content="An XSLT-Driven PWA UI for Icecast Servers"/>
                 <link rel="me" href="https://github.com/bitscoper/Bitscoper_Radio/"/>
                 <meta name="google-site-verification" content="nPqxZsjTdkgkE2-u1AvvvuMZWIk_qJWno_eTHkJAUL0"/>
             </head>
@@ -31,10 +31,10 @@
                     <xsl:choose>
                         <xsl:when test="listeners">
                             <section>
-                                <h3>
+                                <h2>
                                     Mount Point:
                                     <xsl:value-of select="@mount"/>
-                                </h3>
+                                </h2>
                                 <xsl:if test="server_type and ((server_type = 'application/ogg') or (server_type = 'audio/ogg') or (server_type = 'application/mpeg') or (server_type = 'audio/mpeg'))">
                                     <audio controls="controls" preload="none">
                                         <source src="{@mount}" type="{server_type}"/>
@@ -213,17 +213,17 @@
                                     <xsl:otherwise>
                                         <div>
                                             <span>
-                                                <a href="{@mount}" target="_blank" title="Direct Link">
+                                                <a href="{@mount}" title="Direct Stream" target="_blank">
                                                     Direct</a>
                                             </span>
                                             <span>
-                                                <a href="{@mount}.m3u" target="_blank" title="M3U Playlist">M3U</a>
+                                                <a href="{@mount}.m3u" title="M3U Playlist" target="_blank">M3U</a>
                                             </span>
                                             <span>
-                                                <a href="{@mount}.xspf" target="_blank" title="XSPF Playlist">XSPF</a>
+                                                <a href="{@mount}.xspf" title="XSPF Playlist" target="_blank">XSPF</a>
                                             </span>
                                             <span>
-                                                <a href="{@mount}.vclt" target="_blank" title="VCLT Playlist">VCLT</a>
+                                                <a href="{@mount}.vclt" title="VCLT Playlist" target="_blank">VCLT</a>
                                             </span>
                                         </div>
                                     </xsl:otherwise>
@@ -231,11 +231,11 @@
                             </section>
                         </xsl:when>
                         <xsl:otherwise>
-                            <h3>
+                            <h2>
                                 :
                                 <xsl:value-of select="@mount"/>
                                 - Not Connected
-                            </h3>
+                            </h2>
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:for-each>
