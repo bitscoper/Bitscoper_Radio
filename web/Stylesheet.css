@@ -44,7 +44,7 @@ body {
 header {
   border-bottom: 1px solid var(--surface0);
   background-color: var(--mantle);
-  padding: 4rem 1rem;
+  padding: 4rem 1rem 4rem 1rem;
 }
 
 header h1 {
@@ -64,7 +64,8 @@ section {
 
 @media (max-width: 768px) {
   section {
-    margin: 4rem 0rem 4rem 0rem;
+    margin: 4rem 0.5rem 4rem 0.5rem;
+    padding: 2rem 1rem 2rem 1rem;
   }
 }
 
@@ -77,7 +78,6 @@ section h2 {
 section audio,
 section video {
   border: 1px solid var(--surface0);
-  border-radius: 1rem;
 }
 
 section canvas {
@@ -111,6 +111,7 @@ section div span {
 
 section div span a {
   color: var(--text);
+  cursor: pointer;
   transition: color 0.2s;
 }
 
@@ -122,13 +123,14 @@ section div span a:focus {
 footer {
   border-top: 1px solid var(--surface0);
   background-color: var(--mantle);
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 2rem 1rem;
   color: var(--text);
 }
 
 footer a {
   text-decoration: none;
   color: var(--text);
+  cursor: pointer;
   transition: color 0.2s;
 }
 
