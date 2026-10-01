@@ -1,8 +1,8 @@
 {
   "web_apps": [
     {
-      "web_app_identity": "https://radio.bitscoper.dev/",
-      "manifest": "https://radio.bitscoper.dev/Web_Manifest.webmanifest",
+      "web_app_identity": "https://PLACEHOLDER_FOR_HOSTNAME/",
+      "manifest": "https://PLACEHOLDER_FOR_HOSTNAME/Web_Manifest.webmanifest",
       "details": {
         "paths": ["/*"],
         "exclude_paths": []

@@ -6,7 +6,7 @@
         <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
             <head>
                 <meta charset="UTF-8"/>
-                <base href="https://radio.bitscoper.dev/"/>
+                <base href="https://PLACEHOLDER_FOR_HOSTNAME/"/>
                 <title>Bitscoper Radio</title>
                 <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
                 <meta name="theme-color" content="#1e1e2e"/>
@@ -21,7 +21,6 @@
                 <meta name="author" content="Abdullah As-Sadeed"/>
                 <meta name="description" content="An XSLT-Driven PWA UI for Icecast Servers"/>
                 <link rel="me" href="https://github.com/bitscoper/Bitscoper_Radio/"/>
-                <meta name="google-site-verification" content="nPqxZsjTdkgkE2-u1AvvvuMZWIk_qJWno_eTHkJAUL0"/>
             </head>
             <body lang="en-US">
                 <header>

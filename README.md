@@ -4,17 +4,16 @@
 
 An XSLT-Driven PWA UI for Icecast Servers
 
-[radio.bitscoper.dev](https://radio.bitscoper.dev/)
-
 [![No AI](https://raw.githubusercontent.com/nuxy/no-ai-badge/master/badge.svg)](https://github.com/bitscoper/Bitscoper_Radio#notes)
-
-<br />
 
 ![Wide Screenshot](/web/Screenshots/Wide/1920x1080.png)
 
 ![Narrow Screenshot](/web/Screenshots/Narrow/750x1334.png)
 
 </div>
+
+> [!IMPORTANT]
+> Before deployment, replace the `PLACEHOLDER_FOR_HOSTNAME` string throughout the project files with your Icecast server’s hostname.
 
 ## Notes
 

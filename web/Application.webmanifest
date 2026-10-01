@@ -70,7 +70,7 @@
   "scope": "/",
   "scope_extensions": [
     {
-      "origin": "https://radio.bitscoper.dev/",
+      "origin": "https://PLACEHOLDER_FOR_HOSTNAME/",
       "type": "origin"
     }
   ],

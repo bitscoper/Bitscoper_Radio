@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 Disallow:
 Content-Signal: search=yes, ai-input=yes, ai-train=no
-Sitemap: https://radio.bitscoper.dev/sitemap.xml
+Sitemap: https://PLACEHOLDER_FOR_HOSTNAME/sitemap.xml
