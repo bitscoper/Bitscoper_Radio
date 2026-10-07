@@ -70,7 +70,7 @@
   "scope": "/",
   "scope_extensions": [
     {
-      "origin": "https://radio.bitscoper.dev/",
+      "origin": "https://bitscoper-radio.site/",
       "type": "origin"
     }
   ],

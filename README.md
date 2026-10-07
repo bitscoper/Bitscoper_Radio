@@ -4,7 +4,7 @@
 
 An XSLT-Driven PWA UI for Icecast Servers
 
-[radio.bitscoper.dev](https://radio.bitscoper.dev/)
+[bitscoper-radio.site](https://bitscoper-radio.site/)
 
 [![No AI](https://raw.githubusercontent.com/nuxy/no-ai-badge/master/badge.svg)](https://github.com/bitscoper/Bitscoper_Radio#notes)
 
