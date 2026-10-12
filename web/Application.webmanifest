@@ -1,10 +1,18 @@
 {
   "background_color": "#1e1e2e",
-  "categories": ["music", "multimedia", "video"],
+  "categories": [
+    "music",
+    "multimedia",
+    "video"
+  ],
   "description": "An XSLT-Driven PWA UI for Icecast Servers",
   "dir": "ltr",
   "display": "standalone",
-  "display_override": ["window-controls-overlay", "tabbed", "standalone"],
+  "display_override": [
+    "window-controls-overlay",
+    "tabbed",
+    "standalone"
+  ],
   "edge_side_panel": {
     "preferred_width": 400
   },

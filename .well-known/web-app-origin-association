@@ -4,10 +4,14 @@
       "web_app_identity": "https://bitscoper-radio.site/",
       "manifest": "https://bitscoper-radio.site/Web_Manifest.webmanifest",
       "details": {
-        "paths": ["/*"],
+        "paths": [
+          "/*"
+        ],
         "exclude_paths": []
       },
-      "authorize": ["intercept-links"]
+      "authorize": [
+        "intercept-links"
+      ]
     }
   ]
 }
