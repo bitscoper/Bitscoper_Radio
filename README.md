@@ -1,5 +1,7 @@
 <div align="center">
 
+![Bitscoper Radio](/web/Icons/Transparent/128x128.png)
+
 # Bitscoper Radio
 
 An XSLT-Driven PWA UI for Icecast Servers

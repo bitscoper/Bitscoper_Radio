@@ -10,7 +10,7 @@
 				<meta charset="UTF-8"/>
 				<base href="https://bitscoper-radio.site/"/>
 				<title>Bitscoper Radio</title>
-				<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+				<link rel="icon" href="/favicon.ico" sizes="256x256" />
 				<meta name="theme-color" content="#1e1e2e"/>
 				<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
 				<meta name="color-scheme" content="dark"/>

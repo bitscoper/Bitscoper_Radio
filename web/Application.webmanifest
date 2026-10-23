@@ -19,33 +19,21 @@
   "handle_links": "preferred",
   "icons": [
     {
-      "src": "/Icons/Transparent/48x48.png",
+      "src": "/Icons/Transparent/3735x3735.png",
       "type": "image/png",
-      "sizes": "48x48",
+      "sizes": "3735x3735",
       "purpose": "any"
     },
     {
-      "src": "/Icons/Transparent/72x72.png",
+      "src": "/Icons/Transparent/1024x1024.png",
       "type": "image/png",
-      "sizes": "72x72",
+      "sizes": "1024x1024",
       "purpose": "any"
     },
     {
-      "src": "/Icons/Transparent/96x96.png",
+      "src": "/Icons/Transparent/512x512.png",
       "type": "image/png",
-      "sizes": "96x96",
-      "purpose": "any"
-    },
-    {
-      "src": "/Icons/Transparent/128x128.png",
-      "type": "image/png",
-      "sizes": "128x128",
-      "purpose": "any"
-    },
-    {
-      "src": "/Icons/Transparent/192x192.png",
-      "type": "image/png",
-      "sizes": "192x192",
+      "sizes": "512x512",
       "purpose": "any"
     },
     {
@@ -55,9 +43,33 @@
       "purpose": "any"
     },
     {
-      "src": "/Icons/Transparent/512x512.png",
+      "src": "/Icons/Transparent/192x192.png",
       "type": "image/png",
-      "sizes": "512x512",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/Icons/Transparent/128x128.png",
+      "type": "image/png",
+      "sizes": "128x128",
+      "purpose": "any"
+    },
+    {
+      "src": "/Icons/Transparent/96x96.png",
+      "type": "image/png",
+      "sizes": "96x96",
+      "purpose": "any"
+    },
+    {
+      "src": "/Icons/Transparent/72x72.png",
+      "type": "image/png",
+      "sizes": "72x72",
+      "purpose": "any"
+    },
+    {
+      "src": "/Icons/Transparent/48x48.png",
+      "type": "image/png",
+      "sizes": "48x48",
       "purpose": "any"
     }
   ],
