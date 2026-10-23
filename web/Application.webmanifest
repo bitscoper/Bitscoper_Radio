@@ -19,55 +19,127 @@
   "handle_links": "preferred",
   "icons": [
     {
-      "src": "/Icons/Transparent/3735x3735.png",
+      "src": "/Icons/square_cdd6f4Background_30percentPadding_minus5PercentY_colored_5335x5335.png",
+      "type": "image/png",
+      "sizes": "5335x5335",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/Icons/square_cdd6f4Background_30percentPadding_minus5PercentY_colored_1024x1024.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/Icons/square_cdd6f4Background_30percentPadding_minus5PercentY_colored_512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/Icons/square_cdd6f4Background_30percentPadding_minus5PercentY_colored_384x384.png",
+      "type": "image/png",
+      "sizes": "384x384",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/Icons/square_cdd6f4Background_30percentPadding_minus5PercentY_colored_192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/Icons/square_cdd6f4Background_30percentPadding_minus5PercentY_colored_180x180.png",
+      "type": "image/png",
+      "sizes": "180x180",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/Icons/square_cdd6f4Background_30percentPadding_minus5PercentY_colored_167x167.png",
+      "type": "image/png",
+      "sizes": "167x167",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/Icons/square_cdd6f4Background_30percentPadding_minus5PercentY_colored_152x152.png",
+      "type": "image/png",
+      "sizes": "152x152",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/Icons/square_cdd6f4Background_30percentPadding_minus5PercentY_colored_128x128.png",
+      "type": "image/png",
+      "sizes": "128x128",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/Icons/square_cdd6f4Background_30percentPadding_minus5PercentY_colored_96x96.png",
+      "type": "image/png",
+      "sizes": "96x96",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/Icons/square_cdd6f4Background_30percentPadding_minus5PercentY_colored_72x72.png",
+      "type": "image/png",
+      "sizes": "72x72",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/Icons/square_cdd6f4Background_30percentPadding_minus5PercentY_colored_48x48.png",
+      "type": "image/png",
+      "sizes": "48x48",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/Icons/square_transparent_unpadded_colored_3735x3735.png",
       "type": "image/png",
       "sizes": "3735x3735",
       "purpose": "any"
     },
     {
-      "src": "/Icons/Transparent/1024x1024.png",
+      "src": "/Icons/square_transparent_unpadded_colored_1024x1024.png",
       "type": "image/png",
       "sizes": "1024x1024",
       "purpose": "any"
     },
     {
-      "src": "/Icons/Transparent/512x512.png",
+      "src": "/Icons/square_transparent_unpadded_colored_512x512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any"
     },
     {
-      "src": "/Icons/Transparent/384x384.png",
+      "src": "/Icons/square_transparent_unpadded_colored_384x384.png",
       "type": "image/png",
       "sizes": "384x384",
       "purpose": "any"
     },
     {
-      "src": "/Icons/Transparent/192x192.png",
+      "src": "/Icons/square_transparent_unpadded_colored_192x192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any"
     },
     {
-      "src": "/Icons/Transparent/128x128.png",
+      "src": "/Icons/square_transparent_unpadded_colored_128x128.png",
       "type": "image/png",
       "sizes": "128x128",
       "purpose": "any"
     },
     {
-      "src": "/Icons/Transparent/96x96.png",
+      "src": "/Icons/square_transparent_unpadded_colored_96x96.png",
       "type": "image/png",
       "sizes": "96x96",
       "purpose": "any"
     },
     {
-      "src": "/Icons/Transparent/72x72.png",
+      "src": "/Icons/square_transparent_unpadded_colored_72x72.png",
       "type": "image/png",
       "sizes": "72x72",
       "purpose": "any"
     },
     {
-      "src": "/Icons/Transparent/48x48.png",
+      "src": "/Icons/square_transparent_unpadded_colored_48x48.png",
       "type": "image/png",
       "sizes": "48x48",
       "purpose": "any"
@@ -118,9 +190,24 @@
       "description": "An XSLT-Driven PWA UI for Icecast Servers",
       "icons": [
         {
-          "src": "/Icons/Transparent/192x192.png",
+          "src": "/Icons/square_transparent_unpadded_colored_192x192.png",
           "type": "image/png",
           "sizes": "192x192"
+        },
+        {
+          "src": "/Icons/square_transparent_unpadded_colored_96x96.png",
+          "type": "image/png",
+          "sizes": "96x96"
+        },
+        {
+          "src": "/Icons/square_transparent_unpadded_colored_72x72.png",
+          "type": "image/png",
+          "sizes": "72x72"
+        },
+        {
+          "src": "/Icons/square_transparent_unpadded_colored_48x48.png",
+          "type": "image/png",
+          "sizes": "48x48"
         }
       ]
     }

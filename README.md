@@ -1,6 +1,6 @@
 <div align="center">
 
-![Bitscoper Radio](/web/Icons/Transparent/128x128.png)
+![Bitscoper Radio](/web/Icons/square_transparent_unpadded_colored_128x128.png)
 
 # Bitscoper Radio
 

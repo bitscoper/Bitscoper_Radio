@@ -18,7 +18,9 @@
 				<meta name="mobile-web-app-capable" content="yes"/>
 				<link rel="manifest" href="/Application.webmanifest"/>
 				<meta name="apple-mobile-web-app-title" content="Bitscoper Radio"/>
-				<link rel="apple-touch-icon" href="/Icons/Transparent/192x192.png" type="image/png"/>
+				<link rel="apple-touch-icon" href="/Icons/square_cdd6f4Background_30percentPadding_minus5PercentY_colored_180x180.png" type="image/png" sizes="180x180" />
+        <link rel="apple-touch-icon" href="/Icons/square_cdd6f4Background_30percentPadding_minus5PercentY_colored_167x167.png" type="image/png" sizes="167x167" />
+        <link rel="apple-touch-icon" href="/Icons/square_cdd6f4Background_30percentPadding_minus5PercentY_colored_152x152.png" type="image/png" sizes="152x152" />
 				<meta name="robots" content="index, follow"/>
 				<meta name="author" content="Abdullah As-Sadeed"/>
 				<meta name="description" content="An XSLT-Driven PWA UI for Icecast Servers"/>
