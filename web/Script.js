@@ -2,10 +2,6 @@
 
 "use strict";
 
-if ("serviceWorker" in navigator) {
-	navigator.serviceWorker.register("/Service_Worker.js");
-}
-
 window.onload = function() {
 	var audios = Array.from(window.document.getElementsByTagName("audio"));
 	var canvases = Array.from(window.document.getElementsByTagName("canvas"));
@@ -73,3 +69,7 @@ window.onload = function() {
 		});
 	}
 };
+
+if ("serviceWorker" in navigator) {
+	navigator.serviceWorker.register("/Service_Worker.js");
+}
